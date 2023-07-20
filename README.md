@@ -1,7 +1,7 @@
 # Collection of personnal Gremlin Plugins
 A collection of [Joystick Gremlin](https://github.com/WhiteMagic/JoystickGremlin) plugins I developed/adapted/collected.
 
-_Side note: use the Release 13.3 Debug or higher. Otherwise you may encounter a bug where the user UI input box cannot accept negative numbers._  
+_Side note: When using plugins Joystick Gremlin may produce a bug with his user interface input box (cannot accept negative numbers) and for that reason it is advised to use the Release 13.3 Debug or higher._
 
 ## List of plugins
 * _kalman_filter.py_ : 
