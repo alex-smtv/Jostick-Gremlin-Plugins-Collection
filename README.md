@@ -7,8 +7,8 @@ _Side note: When using plugins Joystick Gremlin may produce a bug with his user 
 * _kalman_filter.py_ : 
   Use and extend the Kalman algorithm to be applied to an axis to smooth out jitters. Instead of applying the algorithm consistently to the full range of motion (which will create lag to catch up fast change of direction), the algorithm is smartly applied to the current localized point and deactivated for fast and dynamic change. The initial parameters for the algorithm have especially been fine tuned for a X52.
 
-* _btn_with_modifier_reevaluation.py_ : 
-  Map a physicial button to a vJoy button and to another vJoy button while a modifier is held. Originally if we hold the physical button, which output a vJoy button, and use the modifier while the phyisical button is held, then the second vJoy button is not activted and the output is stuck on the first vJoy button. This plugin fixes that behavior to consistently reevaluate current state.
+* _bind-to-btn_with_modifier_reevaluation.py_ : 
+  Bind a physical button to one vJoy button amongst two depending on whether or not a specified modifier physical button is held. By Joystick Gremlin design if we hold a physical button which outputs a vJoy button press and then use all the while a modifier while the physical button is held, then the second vJoy button press that must occur with the modifier combination is not activated and the output is stuck on the first vJoy button press. This plugin bypasses and fixes that behavior to consistently reevaluate the current state.
 
 ## License
 Feel free to do whatever you want. The repo is released under the [MIT](./LICENSE.md) license.
